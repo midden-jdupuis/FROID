@@ -1,0 +1,15 @@
+node_id: 00-00-01.00-03-02.00-00-01
+node_nam: FROID Node
+node_tag: FOLIO
+required:
+  - NODE_ID: exactly_one_assigned
+  - FLIO_REF: exactly_one
+optional:
+  - ARTIFACT: zero_or_more
+bindings:
+  structural: participates_in_full_DPH_hierarchy
+  overlay: scoped_rule_artifact
+minimal_form: FLIO_REF_only
+children: separate_FOLIO_with_own_NODE_ID_and_FLIO_REF
+
+binding: structural

@@ -1,0 +1,9 @@
+node_id: 00-00-00.00-03-00.0A-02-00
+node_nam: Supersession downstream
+node_tag: FLO_SPDN
+flio_crt: 00-00-00.01-02-00.00-00-01.00-00-00
+flio_own: 00-00-00.00-00-00.00-00-00
+flo_auth: normative
+flo_bind: overlay
+flio_pld:
+  - 00-00-01.00-03-01.0A-02-00.md

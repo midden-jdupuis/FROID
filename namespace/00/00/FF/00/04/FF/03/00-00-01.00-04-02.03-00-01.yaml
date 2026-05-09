@@ -1,0 +1,19 @@
+node_id: 00-00-01.00-04-02.03-00-01
+node_nam: Agent Mode 3
+node_tag: MODE_3
+MM_value: "03"
+purpose: realization
+contains: derived_concrete_artifacts
+properties:
+  - concrete
+  - executable_or_renderable
+  - environment_aware
+  - derived_from_MOD1
+answers: what_does_this_become_in_the_real_system
+examples:
+  - binaries
+  - user_interfaces
+  - generated_logs
+  - executable_behavior
+
+binding: structural

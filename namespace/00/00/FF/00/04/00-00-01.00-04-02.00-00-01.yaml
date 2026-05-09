@@ -1,0 +1,11 @@
+node_id: 00-00-01.00-04-02.00-00-01
+node_nam: Agent Mode
+node_tag: MODE
+occupies: MM_DPH
+modes:
+  MOD1: MM=01
+  MOD2: MM=02
+  MOD3: MM=03
+identity: MM=00
+
+binding: structural

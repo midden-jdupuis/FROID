@@ -1,0 +1,20 @@
+node_id: 00-00-02.00-04-02.01-00-01
+node_nam: Agent Mode 1
+node_tag: MODE_1
+rules:
+  - implementations_belong_in: MOD3
+  - rationale_history_belongs_in: MOD2
+  - multi_concern_documents_must_be_cleaved: true
+  - one_NODE_ID_one_irreducible_semantic_unit: true
+constraints:
+  must_be_atomic: true
+  must_not_contain_normative_rules: true
+  must_not_contain_rationale_or_history: true
+  must_not_contain_implementation: true
+relations:
+  parent: MOD
+  MM_value: "01"
+  governed_by: MOD2
+  realized_by: MOD3
+
+binding: structural

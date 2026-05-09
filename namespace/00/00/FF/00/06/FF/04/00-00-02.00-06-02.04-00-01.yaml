@@ -1,0 +1,19 @@
+node_id: 00-00-02.00-06-02.04-00-01
+node_nam: Node Identifier Segment
+node_tag: NODE_SEG
+rules:
+  - FF_MUST_NOT_appear_in_assigned_NODE_ID
+  - DPH_MAY_constrain_to_controlled_vocabulary
+  - unconstrained_DPH: parent_scope_authority_assigns_unique_nonzero_values
+  - once_assigned: MUST_NOT_be_reassigned_to_different_FOLIO_in_same_scope
+constraints:
+  format: exactly_two_hexadecimal_digits
+  assignable: "01 to FE unless DEPTH constrains further"
+  identity: "00 is not an assignable non-identity value"
+  reserved: FF
+  uniqueness: unique_within_parent_scope_at_DPH
+relations:
+  part_of: NODE_ID
+  corresponds_to: one_DPH
+
+binding: structural

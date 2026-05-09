@@ -1,0 +1,15 @@
+node_id: 00-00-01.00-04-02.02-00-01
+node_nam: Agent Mode 2
+node_tag: MODE_2
+MM_value: "02"
+purpose: governance_and_description
+contains: normative_and_descriptive_knowledge
+governs_or_explains: MOD1_objects_and_relationships
+answers:
+  - what_is_allowed
+  - what_is_required
+  - what_it_means
+  - how_it_relates_to_others
+scope: may_apply_to_many_FOLIO_simultaneously
+
+binding: structural

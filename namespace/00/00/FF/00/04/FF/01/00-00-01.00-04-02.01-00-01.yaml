@@ -1,0 +1,14 @@
+node_id: 00-00-01.00-04-02.01-00-01
+node_nam: Agent Mode 1
+node_tag: MODE_1
+MM_value: "01"
+purpose: canonical_declarative_seed_of_intent
+properties:
+  - atomic
+  - non_normative
+  - non_derived
+  - semantically_complete_on_its_own
+defines: what_something_IS
+independent_of: justification_and_realization
+
+binding: structural

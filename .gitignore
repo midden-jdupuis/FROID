@@ -1,3 +1,22 @@
+##### User #####
+
+# User space
+.scratch/*
+
+# Agent local state
+.claude/*
+.codex/*
+
+# Keep only explicit shared instructions if needed
+!.claude/README.md
+!.codex/README.md
+
+# Sessions are local unless intentionally archived
+.sessions/*
+!.sessions/README.md
+
+##### Python #####
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -216,3 +235,4 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+

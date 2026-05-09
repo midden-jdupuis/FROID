@@ -1,0 +1,13 @@
+node_id: 00-00-01.00-01-02.00-00-01
+node_nam: Node Identifier
+node_tag: NODE_ID
+structure:
+  segment_count: 9
+  segment_type: two_digit_hexadecimal
+  separator: dot
+  order: RR.VV.MM.BB.CC.TT.UU.KK.II
+canonical_form: nine_uppercase_hex_segments_dot_separated
+denotes: one_position_in_FROID_NS
+assignment: independent_of_syntactic_validity
+
+binding: structural

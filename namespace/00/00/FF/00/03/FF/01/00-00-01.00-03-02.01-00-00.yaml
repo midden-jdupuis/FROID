@@ -1,0 +1,69 @@
+node_id: 00-00-01.00-03-02.01-00-00
+node_nam: Folio Manifest
+node_tag: FLIO_REF
+flio_crt: '2026-04-29T00:00:00Z'
+flio_own: 00-00-00.00-00-00.00-00-00
+flo_auth: normative
+flo_bind: structural
+
+filename_pattern: "{NODE_ID}.frd"
+
+required_fields:
+  - node_id
+  - node_nam
+  - node_tag
+  - flio_crt
+  - flio_own
+  - flo_auth
+  - flo_bind
+  - record_hash
+
+optional_fields:
+  - flio_pld
+  - payload_hash
+  - supersession_hash
+  - status
+  - flo_spup
+  - flo_spdn
+
+field_value_types:
+  node_id:           NODE_ID
+  node_nam:          string                 # 1-128 printable ASCII (U+0020 to U+007E), no leading/trailing whitespace
+  node_tag:          NODE_TAG
+  flio_crt:          NODE_ID                # resolves to date FOLIO per FLIO_CRT
+  flio_own:          NODE_ID                # resolves to owner FOLIO per FLIO_OWN
+  flo_auth:          FLO_AUTH               # FL_NORM | FL_DESC
+  flo_bind:          FLO_BIND               # FL_STRCT | FL_OVRLY
+  record_hash:       hex64                  # 64-char lowercase hex SHA-256, carries FL_HSCOR
+  flio_pld:          list[FLIO_ART]         # ordered list of artifact filenames
+  payload_hash:      hex64                  # carries FL_HSPLD; required when flio_pld non-empty
+  supersession_hash: hex64                  # carries FL_HSSPR; appended at supersession
+  status:            enum                   # active | superseded | deferred | retired
+  flo_spup:          list[NODE_ID]          # FOLIO this one supersedes; per FLO_SPUP
+  flo_spdn:          list[NODE_ID]          # FOLIO that supersede this; per FLO_SPDN
+
+manifest_field_governance:
+  layer_1_structural: FLIO_REF              # the field-in-manifest concepts (FLIO_*)
+  layer_2_directional_or_value_class:       # FLO_*
+    - FLO_AUTH
+    - FLO_BIND
+    - FLO_HASH
+    - FLO_RLTN
+    - FLO_SPUP
+    - FLO_SPDN
+  layer_3_enumerated_values:                # FL_*
+    - FL_NORM
+    - FL_DESC
+    - FL_STRCT
+    - FL_OVRLY
+    - FL_HSCOR
+    - FL_HSPLD
+    - FL_HSSPR
+    - FL_SUPER
+    - FL_REFER
+
+field_to_node_id_resolution:                # fields whose value is a NODE_ID reference
+  - flio_crt
+  - flio_own
+  - flo_spup
+  - flo_spdn
