@@ -1,5 +1,10 @@
 ##### User #####
 
+*.NODE_TAG*
+
+# User namespace
+01/*
+
 # User space
 .scratch/*
 
