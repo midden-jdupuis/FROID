@@ -2,9 +2,11 @@ fl_nodid: 00-01-00.02-03-00.01-00-00
 fl_nodtg: FLO_HEAD
 fl_auth: FLO_NORM
 fl_bind: FLO_STRC
+fl_mode: MODE_ONE
 
 schema:
   fl_nodid: "{NODE_ID}"
   fl_nodtg: "{NOD_TAG}"
   fl_auth: "[FLIO_ATH]"
   fl_bind: "[FLIO_BND]"
+  fl_mode: "[MODE]"
