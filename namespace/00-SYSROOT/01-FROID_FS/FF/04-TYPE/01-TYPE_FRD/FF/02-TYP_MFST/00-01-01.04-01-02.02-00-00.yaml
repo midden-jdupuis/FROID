@@ -1,0 +1,15 @@
+fl_nodid: 00-01-00.04-01-00.02-00-00
+fl_nodtg: TYP_MFST
+fl_auth: FLO_NORM
+fl_bind: FLO_STRC
+fl_mode: MODE_ONE
+
+schema:
+  fl_owner: "{USR_USER}"
+  fl_creat: "{TIM_TIME}"
+  fl_hshbd: "{SHA256}"
+  fl_arfct: "{NODE_ID}, [{NODE_ID}, [...]]"
+  fl_hshpl: "{SHA256}"
+  fl_sprup: "{NODE_ID}, [{NODE_ID}, [...]]"
+  fl_sprdn: "{NODE_ID}, [{NODE_ID}, [...]]"
+  fl_hshsp: "{SHA256}"
